@@ -19,6 +19,8 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-pace-theme-center-atom.min.css?v=1.0.2">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
 
 
 <script id="hexo-configurations">
@@ -43,8 +45,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
@@ -118,6 +120,7 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
   <div class="container use-motion">
     <div class="headband"></div>
+	<a href="https://github.com/YzioAAA"><img width="149" height="149" src="https://github.blog/wp-	content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-	full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
@@ -235,9 +238,36 @@
     <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -294,7 +324,7 @@
         
           
         
-        <span class="collection-header">嗯..! 目前共计 1 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
       </div>
       
 
@@ -308,6 +338,35 @@
     <div class="collection-year">
       <h1 class="collection-header">2019</h1>
     </div>
+  
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-09-28T19:50:26+08:00"
+              content="2019-09-28">
+          09-28
+        </time>
+      </div>
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/我的第一篇博客/" itemprop="url">
+            <span itemprop="name">我的第一篇博客</span>
+          </a>
+        
+      </h2>
+
+    </header>
+  </article>
+
+
+
+  
+  
+
   
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -389,7 +448,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -428,7 +487,7 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="/">github</a>
+          <a href="https://yzioaaa.github.io/" title="https://yzioaaa.github.io/" rel="noopener" target="_blank">个人博客</a>
         </li>
       
     </ul>
@@ -477,6 +536,9 @@
   
 
 
+    
+  
+  <script color='100,100,100' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js?v=3.1.0"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
@@ -494,6 +556,8 @@
 
 
 
+
+  <script src="/js/local-search.js?v=7.4.0"></script>
 
 
 
