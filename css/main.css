@@ -1103,7 +1103,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #915083;
+  background: #be1340;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1504,6 +1504,23 @@ pre .javascript .function {
 }
 .use-motion .collection-header {
   opacity: 0;
+}
+.use-motion .page-post-detail .post-title {
+  font-size: 26px;
+  text-align: center;
+  word-break: break-word;
+  font-weight: $posts-expand-title-font-weight;
+  background-color: #b9d3ee;
+  border-radius: 0.3em;
+  line-height: 1em;
+  padding-bottom: 0.12em;
+  padding-top: 0.12em;
+  box-shadow: 2px 2px 7px #9fb6cd;
+}
+@media (max-width: 767px) {
+  .use-motion .page-post-detail .post-title {
+    font-size: 22px;
+  }
 }
 .posts-collapse {
   margin-left: 55px;
